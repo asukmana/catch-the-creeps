@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Catch the Creeps"
+run/main_scene="uid://b2jp2es1eee61"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
