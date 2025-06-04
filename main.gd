@@ -24,7 +24,10 @@ func _on_player_hit() -> void:
 	
 	# $HUD.show_game_over()
 	
-	pass
+	$Music.stop()
+	$DeathSound.play()
+	
+	# pass
 
 func new_game():
 	score = 0
@@ -33,6 +36,8 @@ func new_game():
 	
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
+	
+	$Music.play()
 
 
 func _on_mob_timer_timeout() -> void:
